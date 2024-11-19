@@ -7,7 +7,7 @@ struct Cli {
     /// The path to the GFA file
     file_path: String,
     /// Extract only the paths with the names given in the file.
-    #[arg(short = 'r', long = "rename")]
+    #[arg(short = 'n', long = "names")]
     names_file: Option<String>,
 }
 
