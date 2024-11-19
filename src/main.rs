@@ -2,7 +2,11 @@ mod index_gfa_file;
 use clap::Parser;
 
 #[derive(Parser, Debug)]
-#[command(version = "v0.1.0", about, long_about = None)]
+#[command(
+    version = "v0.1.0",
+    about,
+    long_about = "Reconstruct linear fasta sequences from a GFA graph"
+)]
 struct Cli {
     /// The path to the GFA file
     file_path: String,
